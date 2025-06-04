@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon espace - AcessBank</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="chatbot.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">AcessBank</div>
+    <nav>
+      <a href="index.html">Déconnexion</a>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <section class="solde">
+      <h2>Bonjour, Client !</h2>
+      <p>Solde actuel : <strong>2 450,00 €</strong></p>
+    </section>
+
+    <section class="transactions">
+      <h3>Dernières transactions</h3>
+      <ul>
+        <li>- 50,00 € | Supermarché</li>
+        <li>- 15,00 € | Transport</li>
+        <li>+ 1 200,00 € | Salaire</li>
+      </ul>
+    </section>
+
+    <section class="chatbot">
+      <h3>Assistant IA</h3>
+      <div id="chatbox">
+        <div class="message bot">Bonjour ! Je suis votre assistant IA. Posez-moi une question.</div>
+      </div>
+      <input type="text" id="userInput" placeholder="Écrivez ici..." />
+      <button onclick="sendMessage()">Envoyer</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AcessBank.</p>
+  </footer>
+</body>
+</html>
